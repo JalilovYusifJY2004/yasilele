@@ -1,0 +1,41 @@
+﻿@model Blog
+
+
+<div class="card-body">
+    <h4 class="card-title">Default form</h4>
+    <p class="card-description">
+        Basic form layout
+    </p>
+    <form class="forms-sample" method="post">
+        <div class="form-group">
+            <label asp-for="Name" for="exampleInputUsername1">Name</label>
+            <input asp-for="Name" type="text" type="text" class="form-control" id="exampleInputUsername1" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label asp-for="Author" for="exampleInputUsername1">Author </label>
+            <input asp-for="Author" type="text" type="text" class="form-control" id="exampleInputUsername1" placeholder="Author">
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" for="exampleInputUsername1">Description</label>
+            <input asp-for="Description" type="text" type="text" class="form-control" id="exampleInputUsername1" placeholder="Description">
+        </div>
+        <div class="form-group">
+            <label asp-for="ReplayCount" for="exampleInputUsername1">ReplayCount</label>
+            <input asp-for="ReplayCount" type="text" type="text" class="form-control" id="exampleInputUsername1" placeholder="ReplayCount">
+        </div>
+        <div class="form-group">
+            <label asp-for="Image" for="exampleInputUsername1">Image</label>
+            <input asp-for="Image" type="text" type="text" class="form-control" id="exampleInputUsername1" placeholder="Image">
+        </div>
+
+        <div class="form-check form-check-flat form-check-primary">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary me-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>
+ 
